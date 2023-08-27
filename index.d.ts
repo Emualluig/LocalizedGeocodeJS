@@ -24,6 +24,9 @@ export interface ReverseGeoCodeResult {
         admin1Name: string | undefined;
         countryName: string | undefined;
     };
+    /**
+     * This is a key-value pair where the keys are ISO languages
+     */
     locales: Record<ISOLanguage, Localization>;
 }
 
@@ -33,6 +36,12 @@ export class Geocode {
      * @param array The result of JSON.parse() a localization file.
      * @param maxDistance The maximum distance at which to search for the nearest city. (default: 100km)
      */
-    static Init(array: any, maxDistance: number = 100): Geocode;
+    static Init(array: any, maxDistance?: number): Geocode;
+    /**
+     * Find the nearest point in the geocoding data. 
+     * @param latitude The latitude of the query
+     * @param longitude The longitude of the query
+     * @returns The reverse GeoCoding Result or an error object
+     */
     query(latitude: number, longitude: number): ReverseGeoCodeResult|Error;
 }
