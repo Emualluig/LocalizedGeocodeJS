@@ -136,3 +136,5 @@ The file `query.js` depends on [kd-tree-javascript](https://www.npmjs.com/packag
 Thanks to [GeoNames.org](https://www.geonames.org/) for making geospacial data freely available.
 
 This project was also inspired by [local-reverse-geocoder](https://github.com/tomayac/local-reverse-geocoder).
+
+For people who need more precision when reverse geocoding, you may need to use an API. Check out [Nominatim](https://nominatim.org/), [geocode.maps.co](https://geocode.maps.co/), and [GeoNames](https://www.geonames.org/).
