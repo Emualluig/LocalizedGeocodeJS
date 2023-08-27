@@ -125,7 +125,7 @@ The C++ Visual Studio project `GeneratorCPP` depends on [nlohmann/json](https://
 
 ## generate.js/query.js
 
-The script `generate.js` has no dependencies.
+The script `generate.js` has no dependencies except for GeneratorCPP  which is included in the project.
 
 The node scripts should work on all current versions of node, however it was only tested on v18.17.0 and Windows. It will not work in its current state on other platforms.
 
