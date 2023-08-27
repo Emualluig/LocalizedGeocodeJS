@@ -1,0 +1,15 @@
+{
+  "name": "geonamesjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node ./generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kd-tree-javascript": "^1.0.3"
+  }
+}
